@@ -60,3 +60,7 @@ table {
 .description {
   text-transform: capitalize;
 }
+
+.link-to-repository {
+  display: block;
+}
