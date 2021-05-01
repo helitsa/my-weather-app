@@ -25,6 +25,10 @@ li {
   line-height: 1;
   list-style: none;
 }
+table {
+  padding: 15 px;
+  margin: 0 20px;
+}
 
 .weather-app {
   border: 1px solid grey;
@@ -33,32 +37,24 @@ li {
   border-radius: 10px;
   max-width: 600px;
   height: 400px;
-  background-image: linear-gradient(
-    to right,
-    rgb(238, 156, 167),
-    rgb(255, 221, 225)
-  );
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
-.temperature {
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 1;
-  margin: 0 10px;
-}
-
-.weather-icon {
+.weather-temperature img {
   height: 64px;
   width: 64px;
   margin: 0 20px;
 }
 
-.weather-search-form {
-  margin-bottom: 20px;
-}
-table {
-  padding: 15 px;
+.weather-temperature strong {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
   margin: 0 20px;
+}
+
+.weather-search-form {
+  margin: 20px;
 }
 
 .description {
