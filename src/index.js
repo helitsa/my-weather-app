@@ -86,7 +86,6 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("clic", getCurrentLocation);
+
 
 searchCity("New York");

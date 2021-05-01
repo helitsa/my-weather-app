@@ -22,7 +22,7 @@
       <div class="weather-app">
         <form class="weather-search-form" id="search-city">
           <div class="row">
-            <div class="col-6">
+            <div class="col-9">
               <input
                 type="search"
                 placeholder="Type a city"
@@ -33,11 +33,7 @@
             <div class="col-3">
               <input type="submit" value="Search" class="form-control" />
             </div>
-            <div class="col-3">
-               <button class="btn btn-success w-100" id="current-location-button">
-                Current
-            </button>
-            </div>
+            
           </div>
         </form>
         <h1 id="city"> </h1>
@@ -47,13 +43,13 @@
         </ul>
         <div class="row">
           <div class="col-6">
-            <div class="clearfix">
+            <div class="clearfix weather-temperature">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                class="weather-icon float-left"
+                class="float-left"
               />
               <div class="float-left">
-                <span class="temperature" id="temperature">  </span>
+                <strong class="temperature" id="temperature">  </strong>
                 <span class="units">
                     <a href="#"id="celsius-link">°C</a> | <a href="#"id="fahrenheit-link"> °F</a></span>
               </div>
