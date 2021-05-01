@@ -28,12 +28,16 @@ li {
 
 .weather-app {
   border: 1px solid grey;
-  padding: 15 px;
-  margin: 20px auto;
+  padding: 20 px;
+  margin: 30px auto;
   border-radius: 10px;
-  max-width: 700px;
+  max-width: 600px;
   height: 400px;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: linear-gradient(
+    to right,
+    rgb(238, 156, 167),
+    rgb(255, 221, 225)
+  );
 }
 
 .temperature {
@@ -59,8 +63,4 @@ table {
 
 .description {
   text-transform: capitalize;
-}
-
-.link-to-repository {
-  display: block;
 }
