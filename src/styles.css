@@ -53,6 +53,12 @@ table {
   margin: 0 20px;
 }
 
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
 .weather-search-form {
   margin: 20px;
 }
