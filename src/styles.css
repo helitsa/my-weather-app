@@ -66,3 +66,12 @@ table {
 .description {
   text-transform: capitalize;
 }
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+}
