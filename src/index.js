@@ -48,6 +48,8 @@ function displayWeathercondition(response) {
     "src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   celsiusTemperature= response.data.main.temp;
+
+
 }
 
 function searchCity(city) {
@@ -83,6 +85,40 @@ function getCurrentLocation(event) {
 
 
 
+function displayForecast(){
+  let forecastElement = document.querySelector("#forecast");
+
+let forecastHTML=`<div class="row">`;
+
+let days = ["Thu", "Fri", "Sat", "Sun"];
+days.forEach(function(day){
+
+  forecastHTML=forecastHTML + `
+
+  <div class="col-2">
+    <div class="weather-forecaste-date">${day}</div>
+    <img
+      src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+      alt=""
+      width="42"
+    />
+    <div class="weather-forecast-temperatures">
+      <span class="weather-forecast-temperature-max">18°</span>
+      <span class="weather-forecast-temperature-min">12°</span>
+    
+  </div>
+ </div>
+ `;
+
+});
+
+forecastHTML= forecastHTML + `</div>`;
+  forecastElement.innerHTML= forecastHTML;
+ 
+}
+
+
+
 
 function displayFahrenheitTemperature(event){
   event.preventDefault();
@@ -103,6 +139,7 @@ function displayCelsiusTemperature(event){
 
 let celsiusTemperature= null;
 
+
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
@@ -111,3 +148,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 
 searchCity("New York");
+displayForecast();
