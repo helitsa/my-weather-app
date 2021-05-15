@@ -5,15 +5,15 @@ body {
 h1 {
   color: black;
   display: block;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 28px;
   text-align: left;
-  margin: 0 20px;
+  margin: 0 20px 10px;
 }
 
 ul {
-  margin: 0 20px;
+  margin: 0 20px 10px;
   padding: 0;
 }
 
@@ -24,10 +24,6 @@ li {
   font-weight: 100;
   line-height: 1;
   list-style: none;
-}
-table {
-  padding: 15 px;
-  margin: 0 20px;
 }
 
 .weather-app {
@@ -41,8 +37,8 @@ table {
 }
 
 .weather-temperature img {
-  height: 64px;
-  width: 64px;
+  height: 100px;
+  width: 100px;
   margin: 0 20px;
 }
 
@@ -67,23 +63,15 @@ table {
   text-transform: capitalize;
 }
 
-.active {
-  color: black;
-  cursor: default;
-}
-
-.active:hover {
-  text-decoration: none;
-}
-
 .weather-forecast {
   margin-top: 20 px;
   text-align: center;
   color: black;
+  padding: 20px;
 }
 
 .weather-forecast-date {
-  font-sise: 16px;
+  font-size: 16px;
   opacity: 0.5;
 }
 .weather-forecast-temperature-min {
